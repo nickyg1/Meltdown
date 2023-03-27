@@ -1,0 +1,14 @@
+.menu-button {
+    font-size: 35px;
+    -unity-font-style: bold;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 0.2s;
+}
+
+.menu-button:hover {
+    font-size: 60px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+}

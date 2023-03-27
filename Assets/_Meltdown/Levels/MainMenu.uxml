@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_Meltdown/Levels/MenuStyles.uss?fileID=7433441132597879392&amp;guid=a4e9b9cf4b4381a4dbe4301ee5a113f0&amp;type=3#MenuStyles" />
+    <ui:VisualElement name="LeftSection" style="width: 45%; height: 100%; background-color: rgba(0, 0, 0, 0.43); margin-left: 50px; align-items: center;">
+        <ui:VisualElement name="Logo" style="background-image: url(&apos;project://database/Assets/_Meltdown/Art/ToxicMeltdown.png?fileID=2800000&amp;guid=dd650117349b203419111f265193d168&amp;type=3#ToxicMeltdown&apos;); background-color: rgb(0, 0, 0); height: 76px; width: 316px; justify-content: center; align-items: auto; flex-direction: column-reverse; margin-top: 20%;" />
+        <ui:VisualElement name="Buttons" style="flex-grow: 1; justify-content: center; padding-bottom: 10%; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);">
+            <ui:Button text="Play" display-tooltip-when-elided="true" name="PlayButton" class="menu-button" />
+            <ui:Button text="Quit" display-tooltip-when-elided="true" name="QuitButton" class="menu-button" style="flex-grow: 0;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
