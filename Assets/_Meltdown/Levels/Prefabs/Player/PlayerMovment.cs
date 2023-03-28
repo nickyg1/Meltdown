@@ -38,7 +38,7 @@ public class PlayerMovment : MonoBehaviour
        _controlsReader.onEscapeKeyEvent -= EscapeKey;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Debug.Log(_playerState);
         
@@ -93,8 +93,9 @@ public class PlayerMovment : MonoBehaviour
                 return;
             }
             case PlayerState.JUMPING when _controlsReader.isJumping && GroundChecker():
-                _rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                _rigidbody.AddForce(Vector3.up * jumpForce , ForceMode.Impulse);//needs to be in fixedupdate so that it doesn't become frame dependent and mess with the build version
                 return;
+            
             case PlayerState.JUMPING:
             {
                 if (GroundChecker())
@@ -105,7 +106,7 @@ public class PlayerMovment : MonoBehaviour
             }
         }
     }
-
+    
     private void IdleStateReset()
     {
         _playerState = PlayerState.IDLE;
